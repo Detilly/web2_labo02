@@ -2,10 +2,32 @@
   "name": "demo02",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "serveur.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon serveur.js"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "JBV",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Detilly/demo02.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Detilly/demo02/issues"
+  },
+  "homepage": "https://github.com/Detilly/demo02#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^6.0.13",
+    "passport": "^0.5.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
