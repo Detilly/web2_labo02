@@ -3,10 +3,6 @@ const mongoose = require('mongoose');
 // schema de donnees pour les Usagers
 // _id, nom, email, password, date
 let schemaUsager = mongoose.Schema({
-    _id: {
-        type: String,
-        required: true
-    },
     nom: {
         type: String,
         required: true

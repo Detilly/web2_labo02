@@ -4,22 +4,31 @@
         <h1 class="text-center mb-3">
             <i class="fas fa-user-plus"></i> Créer un compte
         </h1>
+        <%- include ('./partiels/messages.ejs') %>
         <form action="/usagers/register" method="POST">
             <div class="form-group">
                 <label for="nom">Nom</label>
-                <input type="text" id="nom" name="nom" class="form-control" placeholder="Entrez le nom">
+                <input type="text" id="nom" name="nom" class="form-control" 
+                    value="<%= typeof nom != 'undefined' ? nom : '' %>"
+                    placeholder="Entrez le nom">
             </div>
             <div class="form-group">
                 <label for="email">Courriel</label> 
-                <input type="email" id="email" name="email" class="form-control" placeholder="Entrez un courriel">
+                <input type="email" id="email" name="email" class="form-control" 
+                    value="<%= typeof email != 'undefined' ? email : '' %>"    
+                    placeholder="Entrez un courriel">
             </div>
             <div class="form-group">
                 <label for="password">Mot de passe</label> 
-                <input type="password" id="password" name="password" class="form-control" placeholder="Entrez un mot de passe">
+                <input type="password" id="password" name="password" class="form-control" 
+                    value="<%= typeof password != 'undefined' ? password : '' %>"
+                    placeholder="Entrez un mot de passe">
             </div>
             <div class="form-group">
                 <label for="password2">Confirmer le mot de passe</label> 
-                <input type="password" id="password2" name="password2" class="form-control" placeholder="Confirmez le mot de passe">
+                <input type="password" id="password2" name="password2" class="form-control" 
+                    value="<%= typeof password2 != 'undefined' ? password2 : '' %>"
+                    placeholder="Confirmez le mot de passe">
             </div>
             <button type="submit" class="btn btn-primary btn-block">Enregistrer le compte</button>
         </form>

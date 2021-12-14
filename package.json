@@ -6,16 +6,17 @@
   "scripts": {
     "dev": "nodemon serveur.js"
   },
-  "author": "JBV",
-  "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Detilly/demo02.git"
+    "url": "git+https://alain-clg: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@github.com/alain-clg/web2_labo2.git"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Detilly/demo02/issues"
+    "url": "https://github.com/alain-clg/web2_labo2/issues"
   },
-  "homepage": "https://github.com/Detilly/demo02#readme",
+  "homepage": "https://github.com/alain-clg/web2_labo2#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "connect-flash": "^0.1.1",
